@@ -1,0 +1,99 @@
+#contatos {
+    display: table;
+    margin: auto;
+    width: 100%;
+    max-width: 480px;
+}
+
+#contatos label {
+    display: block;
+    padding: 0 0 .25rem .25rem;
+}
+
+#contatos input, #contatos textarea, #contatos button {
+    font-family: inherit;
+    font-size: inherit;
+    width: 100%;
+    padding: .3rem;
+    border: 1px solid green;
+    border-radius: .3rem;
+    border-bottom: 3px solid green;
+}
+
+#contatos textarea {
+    min-height: 2rem;
+    height: 6rem;
+    resize: vertical;
+}
+
+#contatos button {
+    border: none;
+    background: linear-gradient(rgb(251, 38, 251), rgb(140, 0, 140));
+    color: white;
+    width: auto;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+#contatos button:hover {
+    background: linear-gradient(rgb(241, 132, 241), rgb(190, 0, 190));
+}
+
+/* Campos de formulário inválido */
+#contatos input:invalid, #contatos textarea:invalid {
+    background-color: rgb(255, 227, 227);
+    border: 1px solid red;
+    border-bottom: 3px solid red;
+}
+
+/* Botão de formulário inválido */
+#contatos:invalid button {
+    background: linear-gradient(rgb(210, 210, 210), grey);
+    /* Desabilita cliques */
+    pointer-events: none
+}
+
+/* Outros contatos */
+
+.menu-contatos {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.menu-contatos a {
+    display: inline-block;
+    padding: .25rem;
+}
+
+.menu-contatos i[class~=fa-facebook] {
+    color: #1877f2;
+}
+
+.menu-contatos i[class~=fa-twitter] {
+    color: #1da1f2;
+}
+
+.menu-contatos i[class~=fa-instagram] {
+    color: #c13584;
+}
+
+.links {
+   display: table;
+   margin: auto;
+   padding-bottom: 1rem;
+}
+
+.links a {
+   display: flex;
+   align-items: center;
+   padding: .4rem;
+}
+
+.links span {
+   display: inline-block;
+   margin-left: .3rem;
+}
+
+.links i {
+   font-size: 1.4rem;
+}
