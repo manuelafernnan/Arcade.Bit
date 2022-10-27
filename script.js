@@ -1,5 +1,5 @@
 function runApp() {
-    loadPage('home');
+    loadPage('login');
     $(document).on('click', 'a', routerLink);
 }
 

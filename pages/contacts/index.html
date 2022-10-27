@@ -1,51 +1,70 @@
-<article>
-    <div class="msg">
-        <h2>Contate-Nos</h2>
-        <p>Preencha o formulário ao lado ou entre em contato através de nossas redes sociais. </p>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Contato</title>
+</head>
+<body>
+    <div class="main-contacts">
+        <div class="left-contacts">
+            <h1>CONTATE-NOS</h1>
+            <p>Preencha o formulário ou entre</p>
+            <p>em contato através de nossas redes sociais.</p>
+                <div class="links-contacts">
+                    <a href="https://facebook.com/Arcade.Bit">
+                        <i class="fa-brands fa-facebook fa-fw fa-3x"></i>
+                    </a>
+                <a href="https://twitter.com/Arcade.Bit">
+                        <i class="fa-brands fa-twitter fa-fw fa-3x"></i>
+                </a>
+                <a href="https://instagram.com/Arcade.Bit">
+                    <i class="fa-brands fa-instagram fa-fw fa-3x"></i>
+                </a>
+                </div>
+        </div>
+        <div class="left-contacts-img">
+            <img src="/img/Mobile-bro.svg" alt="Ilustração Social Media">
+        </div>
+        <div class="right-contacts">
+            <div class="card-contacts">
+                
+                    <form action="" method="post" id="textfield">
+                        <div class="form-header">
+            
+                            <p>
+                                <label for="name">Nome:</label>
+                                <input type="text" name="name" id="name" placeholder="Seu nome completo" required minlength="3">
+                            </p>
+                    
+                            <p>
+                                <label for="email">E-mail:</label>
+                                <input type="email" name="email" id="email" placeholder="Seu e-mail principal" required>
+                            </p>
+                    
+                            <p>
+                                <label for="subject">Assunto:</label>
+                                <input type="text" name="subject" id="subject" placeholder="Assunto do contato" required minlength="5">
+                            </p>
+                    
+                            <p>
+                                <label for="message">Mensagem:</label>
+                                <textarea name="message" id="message" placeholder="Escreva o que quiser" required minlength="5"></textarea>
+                            </p>
+                        </div>
+                
+                    <p>
+                        <button class="btn-contacts" type="submit">Enviar</button>
+                    </p>
+        
+                    </form>&nbsp;
+                    <!-- <h3>ENVIE-NOS O SEU FEEDBACK :)</h3> -->
+            </div>
+        </div>
     </div>
+</body>
+</html>
 
-    <div class="links">
-        <a href="https://facebook.com/Arcade.Bit">
-            <i class="fa-brands fa-facebook fa-fw fa-3x"></i>
-        </a>
-       <a href="https://twitter.com/Arcade.Bit">
-            <i class="fa-brands fa-twitter fa-fw fa-3x"></i>
-       </a>
-       <a href="https://instagram.com/Arcade.Bit">
-        <i class="fa-brands fa-instagram fa-fw fa-3x"></i>
-       </a>
-    </div>
-
-</article>
-
-<aside>
-    <p>Grande visão sem ótimas pessoas é irrelevante! Envie-nos o seu feedback :)</p>
-    <form action="" method="post" id="contatos">
-        <p>
-            <label for="name">Nome:</label>
-            <input type="text" name="name" id="name" placeholder="Seu nome completo" required minlength="3">
-        </p>
-
-        <p>
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email" placeholder="Seu e-mail principal" required>
-        </p>
-
-        <p>
-            <label for="subject">Assunto:</label>
-            <input type="text" name="subject" id="subject" placeholder="Assunto do contato" required minlength="5">
-        </p>
-
-        <p>
-            <label for="message">Mensagem:</label>
-            <textarea name="message" id="message" placeholder="Escreva o que quiser" required minlength="5"></textarea>
-        </p>
-
-        <p>
-            <button type="submit">Enviar</button>
-        </p>
-
-    </form>&nbsp;
-</aside>
 
     
