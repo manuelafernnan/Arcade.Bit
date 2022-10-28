@@ -24,6 +24,7 @@ body{
     padding-right: 15px;
 }
 .box{
+    padding: 30px;
     display: flex;
     width: 930px;
 }
@@ -56,6 +57,12 @@ body{
     color: #7c1f80;
     text-decoration: none;
 }
+
+.form-box p a:hover{
+    color: #ce0268;
+    text-decoration: underline;
+}
+
 .form-box form{
     margin: 20px 0;
 }
@@ -100,19 +107,19 @@ form .input-group button:hover{
     color: black;
     background-color:#00fffc;
 }
-@media (max-width:930px) {
+@media (max-width:1024px) {
     .img-box{
         display: none;
     }
     .box{
-        width: 700px;
+        width: 80%;
     }
     .form-box{
         width: 100%;
         border-radius: 20px;
     }
 }
-@media (max-width:500px) {
+@media (max-width:768px) {
     .w50{
         width: 100%;
         padding: 0;
