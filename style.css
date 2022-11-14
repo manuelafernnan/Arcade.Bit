@@ -23,11 +23,13 @@ body{
 }
 
 #wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    position: relative;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: space-between;
 }
 
 header{
@@ -98,89 +100,51 @@ nav {
     color: #00fffc;
 }
 
-.mobile-menu {
-    display: none;
-    cursor: pointer;
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
 }
 
-.mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-}
-
-@media (max-width: 1024px) {
-    body {
-        overflow-x: hidden;
-    }
-    .navlist {
-        display: block;
-        position:absolute;
-        top: 8vh;
-        right: 0;
-        width: 100vw;
-        height: 92vh;
-        background: rgb(8, 8, 8, 0.9);
-        transform: translateX(100%);
-        transition: 0.3s ease-in;
-    }
-    .navlist li {
-        display: block;
-        text-align: center;
+@media (max-width: 952px){
+	.checkbtn {
+		display: block;
+	}
+	.navlist{
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+        background: rgb(8, 8, 8);
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+        align-items: center;
         justify-content: space-evenly;
-        align-items:center;
         flex-direction: column;
-        margin-top: 5rem;
-    }
+        z-index: 999;
 
-    .navlist a {
-        display: block;
-    }
-
-    .login{
-        display: flex;
-        padding-top: 3rem;
-    }
+	}
+	.navlist ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
 
     .login a{
-        margin-left: 0%;
+        margin-left: 0;
      }
 
-
-    .mobile-menu {
-        display: block;
-        position: relative;
-        left: 5%;
-    }
-}
-
-.navlist.active, .login{
-    transform: translateX(0);
-}
-
-@keyframes navLinkFade {
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-}
-
-.mobile-menu.active .line2 {
-    opacity: 0;
-}
-
-.mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
+	#check:checked ~ ul {
+		left: 0;
+	}
 }
 
 main {
@@ -190,21 +154,6 @@ main {
     flex-direction: column;
 }
 
-/* main article, main aside {
-    background-color: rgba(255, 255, 255, 0.955);
-    overflow: auto;
-    border-radius: .5rem;
-    margin: 0 .5rem;
-    padding: 0 1rem;
-} */
-
-main article {
-    flex-grow: 1;
-}
-
-/* main aside {
-    margin-top: .5rem;
-} */
 
 @media (min-width: 768px) {
     main {
@@ -215,37 +164,17 @@ main article {
         flex-grow: 1;
     }
 
-    /* main aside {
-        margin: 0;
-        margin-right: .5rem;
-        min-width: 220px;
-        max-width: 220px;
-    } */
 }
 
 footer {
-    
+    text-align: center;
     background: rgb(8, 8, 8);
-    font-family: 'Quicksand', sans-serif;
-    padding-top: 20px;
     color: #fff;
+    padding-top: 20px;
+    bottom: 0;
+    width: 100%;
 }
 
-/* .ftop {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.ftop a {
-    font-size: 1.5rem;
-    padding: .25rem;
-    color: #0187a7;
-}
-
-.ftop a:hover {
-    color: #00fffc;
-} */
 .footer-content {
     display: flex;
     align-items: center;
@@ -257,7 +186,6 @@ footer {
 .footer-content p{
     max-width: 500px;
     margin: 10px auto;
-    line-height: 28px;
     font-size: 14px;
 }
 
@@ -269,9 +197,7 @@ footer {
 .social{
     list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0; 
+    margin: 20px;
 }
 
 .social li{
@@ -294,7 +220,7 @@ footer {
 
 .footer-bottom{
     background: #000;
-    /* width: 100vw; */
+    margin-top: 20px;
     padding: 20px 0;
     text-align: center;
 }
