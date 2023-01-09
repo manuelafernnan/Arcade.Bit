@@ -1,0 +1,1 @@
+getTitle ('Jogue agora!');
