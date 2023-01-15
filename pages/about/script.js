@@ -1,1 +1,0 @@
-getTitle ('Sobre nós!');

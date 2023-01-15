@@ -1,1 +1,0 @@
-getTitle ('Faça contato!');
